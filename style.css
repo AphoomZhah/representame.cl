@@ -1,0 +1,301 @@
+/*
+Theme Name: Representame.cl
+Theme URI: http://representame.cl/
+Description: Representame.cl - Prueba
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: Representame
+*/
+* {
+    box-sizing: border-box;
+}
+
+:hover, :focus {
+    text-decoration: none!important;
+}
+
+:hover {
+    transition: 0.2s all ease-in;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.first-section-margin {
+    margin-top: 100px;
+}
+
+header {
+    padding: 20px 0;
+    height: 83px;
+    border-bottom: 3px solid #ff6b00;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.main-menu {
+    text-align: right;
+}
+
+.menu-icon {
+    display: none !important;
+    font-size: 22px !important;
+    color: #ff6b00;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    cursor: pointer;
+}
+
+.main-menu ul {
+    margin-top: 10px;
+}
+
+.main-menu ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 15px;
+}
+
+.main-menu ul a {
+    color: #ff6b00;
+}
+
+.main-menu ul a:hover {
+    color: #1f2a3e;
+}
+
+.login-btn, 
+.register-btn {
+    border: 2px solid #ff6b00;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.main-menu ul .register-btn {
+    background-color: #ff6b00;
+    color: #fff;
+}
+
+.login-btn:hover, 
+.register-btn:hover {
+    border: 2px solid #1f2a3e;
+}
+
+.main-menu ul .register-btn:hover {
+    background-color: #1f2a3e;
+    color: #fff;
+}
+
+.user-bar {
+    background-color: #ff6b00;
+    color: #fff;
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 83px;
+}
+
+.dashboard-menu-item {
+    color: #fff;
+    line-height: 35px;
+    height: 35px;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    padding: 0 10px;
+}
+
+.dashboard-menu-item:hover {
+    background-color: #e05a00;
+    color: #fff;
+}
+
+/*** Alert Warning ***/
+
+.alert {
+    position: relative;
+    overflow: hidden;
+}
+
+.alert-img {
+    display: block;
+    float: left;
+    width: 15%;
+    max-width: 50px;
+    margin-right: 3%;
+}
+
+.alert-text {
+    display: block;
+    float: left;
+    width: 82%;
+}
+
+.alert-text a {
+    color: #ff6b00;
+    text-decoration: underline
+}
+
+.complete-profile-message {
+    margin-bottom: 50px;
+}
+
+.alert-registration {
+    background-color: #f2f2f2;
+    margin-top: 60px;
+    padding: 35px 100px;
+}
+
+.welcome-title {
+    text-align: center;
+    background-color: #ff6b00;
+    color: #fff;
+    font-size: 16px;
+    width: 160px;
+    padding: 8px;
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+}
+
+.separator {
+    background-color: #ff6b00;
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    display: block;
+}
+
+.dashboard-introduction-message {
+    max-width: 720px;
+    width: 90%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.dashboard-steps-text {
+    text-align: center;
+}
+
+.ico-complete-step img {
+    margin-bottom: 10px;
+}
+
+.ico-complete-step p {
+    color: #ff6b00;
+}
+
+.ico-complete-step.unavailable img {
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.ico-complete-step.unavailable p {
+    color: #b4b4b4;
+}
+
+/** Footer **/
+
+footer {
+    background-color: #1f2a3e;
+    min-height: 200px;
+}
+
+
+/** Responsive **/
+
+@media screen and (max-width: 991px) {
+
+    .main-menu {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+        top: 71px;
+    }
+    
+    .menu-icon {
+        display: block !important;
+    }
+
+    #nav-menu {
+        padding: 0;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    #nav-menu.active {
+        padding: 0;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .main-menu ul li {
+        list-style: none;
+        display: block;
+        margin-left: 0;
+    }
+
+    .main-menu ul a {
+        color: #fff;
+        background-color: #1f2a3e;
+        padding: 15px 0 15px 15px;
+        border-top: 1px solid #364663;
+        display: block;
+    }
+    
+    .login-btn, 
+    .register-btn {
+        border: 0px solid transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .main-menu ul .register-btn {
+        background-color: #1f2a3e;
+        color: #fff;
+    }
+    
+    .main-menu ul a:hover, 
+    .main-menu ul .register-btn:hover {
+        background-color: #ff6b00;
+        color: #fff;
+        border: 0px solid transparent;
+        border-top: 1px solid #364663;
+    }
+    
+    .alert-registration {
+        margin-top: 60px;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    
+    .alert-img {
+        display: block;
+        float: none;
+        width: 15%;
+        margin-right: 0%;
+        margin: 0 auto 10px auto
+    }
+
+    .alert-text {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
