@@ -52,7 +52,123 @@
     </header>
     
 
-   
+   <!------ Wizard Form ---->
+    <div class="container first-section-margin">
+	   <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <section>
+                <div class="wizard">
+                    <div class="wizard-inner">
+                        <div class="connecting-line"></div>
+                            <ul class="nav nav-tabs" role="tablist">
+
+                            <li role="presentation" class="active">
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Información Contacto">
+                                    <span class="round-tab">1</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation" class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Información Financiera">
+                                    <span class="round-tab">2</span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Cargar Documentos">
+                                    <span class="round-tab">3</span>
+                                </a>
+                            </li>
+
+                            <li role="presentation" class="disabled">
+                                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Dashboard">
+                                    <span class="round-tab">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Content Tabs -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="step1">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3>Información de contacto</h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Nombre y Apellido">
+                                    <input name="firstname" type="text" placeholder="RUT">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Email">
+                                    <input name="firstname" type="text" placeholder="Teléfono">
+                                </div>
+                                <div class="col-sm-12">
+                                    <h4>Dirección</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Nombre y Apellido">
+                                    <input name="firstname" type="text" placeholder="RUT">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Email">
+                                    <input name="firstname" type="text" placeholder="Teléfono">
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn next-step pull-right">Siguiente</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane" role="tabpanel" id="step2">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3>Información financiera</h3>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Nombre y Apellido">
+                                    <input name="firstname" type="text" placeholder="RUT">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Email">
+                                    <input name="firstname" type="text" placeholder="Teléfono">
+                                </div>
+                                <div class="col-sm-12">
+                                    <h4>Dirección</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Nombre y Apellido">
+                                    <input name="firstname" type="text" placeholder="RUT">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input name="firstname" type="text" placeholder="Email">
+                                    <input name="firstname" type="text" placeholder="Teléfono">
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn prev-step">Anterior</button>
+                                    <button type="button" class="btn next-step pull-right">Siguiente</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step3">
+                            <h3>Paso 3</h3>
+                            <p>Cargar documento</p>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-info-full next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="complete">
+                            <h3>Paso 4</h3>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- End of content tabs -->
+            </div>
+        </section>
+    </div>
+   </div>
+</div>
+<!---- End of Wizzard Form ----->
 
 
 <footer>
