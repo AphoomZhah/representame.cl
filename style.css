@@ -35,7 +35,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
 }
 
 .main-menu {
@@ -218,7 +218,7 @@ footer {
         position: fixed;
         width: 100%;
         left: 0;
-        z-index: 10;
+        z-index: 100;
         top: 71px;
     }
     
@@ -296,6 +296,165 @@ footer {
 
 
 
+/******************************** Wizzard FORM *************************************/
 
+.wizard {
+    margin: 20px auto;
+    background: #fff;
+}
 
+.wizard .nav-tabs {
+    position: relative;
+    margin: 40px auto;
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+}
+
+.wizard > div.wizard-inner {
+    position: relative;
+}
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 75%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    background: #ccc;
+    color: #fff;
+    border: 2px solid #ccc;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+}
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #f16100;
+    border: 2px solid #f16100;
+    
+}
+
+.wizard .nav-tabs > li {
+    width: 25%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #f16100;
+    transition: 0.1s ease-in-out;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #f16100;
+}
+
+.wizard .nav-tabs > li a {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.wizard .nav-tabs > li a:hover {
+    background: transparent;
+}
+
+.wizard .tab-content {
+    border: 2px solid #f16100;
+    padding: 30px 45px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.wizard .tab-content h3 {
+    color: #f16100;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.wizard .tab-content h4 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.wizard .tab-pane {
+    position: relative;
+}
+
+.wizard .tab-pane input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 35px;
+    padding: 0 8px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
 
